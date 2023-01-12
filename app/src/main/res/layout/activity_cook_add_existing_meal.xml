@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEBDD"
+    app:backgroundTint="@null"
+    tools:context=".cook.CookAddExistingMeal">
+
+    <Button
+        android:id="@+id/cook_exist_meal_action_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CE1212"
+        android:text="Add to Menu"
+        android:textColor="#1B1717"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXISTING MEAL"
+        android:textColor="#1B1717"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="414dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="126dp"
+        android:paddingHorizontal="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.253">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal name"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_name_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="110sp"
+                android:paddingVertical="5sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_meal_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal type"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_meal_type_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="110sp"
+                android:paddingVertical="5sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_cuisine_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuisuine type"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_cuisine_type_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="110sp"
+                android:paddingVertical="5sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_price_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="110sp"
+                android:paddingVertical="5sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/cook_exist_meal_action_tv_description_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="110sp"
+                android:paddingVertical="30sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/cook_exist_meal_action_btn_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:backgroundTint="#CE1212"
+        android:text="Ingredients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <Button
+        android:id="@+id/cook_exist_meal_action_btn_allergens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#CE1212"
+        android:text="Allergens"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cook_exist_meal_action_btn_ingredients"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

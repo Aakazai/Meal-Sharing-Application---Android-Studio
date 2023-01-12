@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEBDD"
+    app:backgroundTint="@null"
+    tools:context=".cook.CookAddMeal">
+
+    <Button
+        android:id="@+id/cook_add_meal_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="#CE1212"
+        android:text="Add to Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="388dp"
+        android:layout_height="287dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243"
+        tools:layout_editor_absoluteX="11dp">
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/cook_add_meal_et_meal_type"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
+        <!--            android:ems="10"-->
+        <!--            android:hint="Meal Type"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:minHeight="48dp"-->
+        <!--            android:textColor="#1B1717"-->
+        <!--            android:textColorHint="#1B1717" />-->
+
+
+        <EditText
+            android:id="@+id/cook_add_meal_et_meal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:ems="10"
+            android:hint="Meal Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#1B1717"
+            android:textColorHint="#1B1717" />
+
+        <TextView
+            android:id="@+id/cook_add_meal_tv_meal_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meal Type"
+            android:textColor="#1B1717"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@android:style/Widget.EditText"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/cook_add_meal_radio_group"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="658dp">
+
+            <RadioButton
+                android:id="@+id/cook_add_meal_radio_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Breakfest"
+                android:textColor="#1B1717" />
+
+            <RadioButton
+                android:id="@+id/cook_add_meal_radio_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Lunch"
+                android:textColor="#1B1717" />
+
+            <RadioButton
+                android:id="@+id/cook_add_meal_radio_dinner"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Dinner"
+                android:textColor="#1B1717" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/cook_add_meal_et_cuisine_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cuisine Type"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#1B1717"
+            android:textColorHint="#1B1717" />
+
+        <EditText
+            android:id="@+id/cook_add_meal_et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C8ADAD"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="#1B1717"
+            android:textColorHint="#1B1717" />
+
+        <EditText
+            android:id="@+id/cook_add_meal_et_price"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:digits="1234567890 ."
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="#1B1717"
+            android:textColorHint="#1B1717" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Meal"
+        android:textColor="#1B1717"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/cook_add_meal_btn_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:backgroundTint="#CE1212"
+        android:text="ingredients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Button
+        android:id="@+id/cook_add_meal_btn_allergens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CE1212"
+        android:text="allergens"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toEndOf="@+id/cook_add_meal_btn_ingredients"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <TextView
+        android:id="@+id/cook_add_meal_tv_meal_exists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#EEEBDD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <TextView
+        android:id="@+id/cook_add_meal_tv_meal_exists_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#EEEBDD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <TextView
+        android:id="@+id/cook_add_meal_tv_cook_meal_exists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="2"
+        android:text="You are already offering a meal with this name.\nProvide a unique name if you would still like to offer it."
+        android:textColor="#74112F"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

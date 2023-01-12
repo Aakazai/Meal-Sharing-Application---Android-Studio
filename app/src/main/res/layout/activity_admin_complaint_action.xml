@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEBDD"
+    android:paddingHorizontal="20sp"
+    app:backgroundTint="@null"
+    tools:context=".admin.AdminComplaint">
+
+    <Button
+        android:id="@+id/admin_complaint_btn_suspend_indef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#74112F"
+        android:text="Suspend Indefinitely"
+        app:backgroundTint="#CE1212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_complaint_btn_suspend_tmp"
+        app:layout_constraintVertical_bias="0.347" />
+
+    <Button
+        android:id="@+id/admin_complaint_btn_suspend_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#74112F"
+        android:text="Suspend 48 Hours"
+        app:backgroundTint="#CE1212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/admin_complaint_btn_dismiss" />
+
+    <Button
+        android:id="@+id/admin_complaint_btn_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:backgroundTint="#74112F"
+        android:text="Dismiss"
+        app:backgroundTint="#CE1212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/admin_complaint_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:textColor="#1B1717"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/admin_complaint_btn_dismiss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_complaint_tv_title">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_complaint_tv_id"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="10sp"
+                android:text="ID"
+                android:textColor="#1B1717"
+                app:layout_constraintBottom_toTopOf="@+id/admin_complaint_tv_client"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.736" />
+
+            <TextView
+                android:id="@+id/admin_complaint_id_tv_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="85sp"
+                android:paddingVertical="10sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_complaint_tv_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="10sp"
+                android:text="Client Username"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/admin_complaint_client_tv_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="85sp"
+                android:paddingVertical="10sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_complaint_id_tv_cook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="10sp"
+                android:text="Cook Username "
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/admin_complaint_id_cook_tv_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="85sp"
+                android:paddingVertical="10sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_complaint_tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="10sp"
+                android:text="Client Username"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/admin_complaint_reason_tv_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="85sp"
+                android:paddingVertical="10sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/admin_complaint_id_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="10sp"
+                android:text="Complaint Status"
+                android:textColor="#1B1717" />
+
+            <TextView
+                android:id="@+id/admin_complaint_id_status_tv_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="85sp"
+                android:paddingVertical="10sp"
+                android:text="TextView"
+                android:textColor="#1B1717" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

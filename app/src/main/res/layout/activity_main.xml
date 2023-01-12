@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCC6C6"
+    android:backgroundTint="#EEEBDD"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="274dp"
+        android:layout_height="260dp"
+        android:layout_marginBottom="241dp"
+        android:background="#1C1A1A"
+        android:backgroundTint="#EEEBDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/clientSignUp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#681818"
+            android:backgroundTint="#F3E3E2"
+            android:foregroundTint="#000000"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="goToClientSU"
+            android:text="Sign up as Client"
+            android:textColor="#1B1717"
+            app:backgroundTint="#CE1212"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/chefSignUp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#6E1B1B"
+            android:backgroundTint="#F3E3E2"
+            android:onClick="goToCookSU"
+            android:text="Sign up as Cook"
+            android:textColor="#1B1717"
+            app:backgroundTint="#CE1212"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/logIn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chefSignUp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:layout_marginBottom="5dp"
+            android:background="#770505"
+            android:backgroundTint="#F3E3E2"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="goToLogin"
+            android:text="Already Registered?"
+            android:textColor="#1B1717"
+            app:backgroundTint="#CE1212"
+            app:rippleColor="#000000"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="411dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="139dp"
+        android:background="#E2DCC8"
+        android:backgroundTint="#E2DCC8"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:backgroundTint="#810000"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:foregroundTint="#810000"
+            android:foregroundTintMode="src_atop"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="mealer"
+            android:textAllCaps="true"
+            android:textColor="#CE1212"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
