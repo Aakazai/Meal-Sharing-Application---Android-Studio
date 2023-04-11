@@ -1,5 +1,4 @@
-This archive contains all necessary files for Deliverable 4 (Mostly Client Features and Integration) of the Mealer App
-Android Project.
+An android studio application which lets users create, sell, and share meals. Coded in Java, with a SQLite database.
 
 Administrator credentials:
 
